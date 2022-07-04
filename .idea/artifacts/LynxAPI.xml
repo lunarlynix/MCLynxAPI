@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LynxAPI">
+    <output-path>$PROJECT_DIR$/out/artifacts/LynxAPI</output-path>
+    <root id="archive" name="LynxAPI.jar">
+      <element id="module-output" name="LynxAPI" />
+      <element id="library" level="project" name="google.code.gson" />
+    </root>
+  </artifact>
+</component>
