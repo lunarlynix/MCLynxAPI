@@ -7,10 +7,12 @@ import org.bukkit.entity.Player;
 public class SendAlert {
     public static void AlertMsg(Player player) {
         try {
-            if(Fetcher.getAlert() != null) {
+            if(Fetcher.getAlert() != null  && Fetcher.getAlert() != "") {
                     player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&c&lALERT --------------------------------"));
                     player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&c" + Fetcher.getAlert()));
                     player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&c&l--------------------------------------"));
+            } else {
+                System.out.println("[LynxAPI] No Alerts Available.");
             }
         } catch (Exception e) {
             System.out.println("[LynxAPI] Failed to get JSON Alert Msgs! Is the API offline?");
