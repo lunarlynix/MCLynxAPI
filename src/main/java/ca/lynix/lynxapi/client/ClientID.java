@@ -1,7 +1,7 @@
-package ca.lynix.lynxapi.hwidban;
+package ca.lynix.lynxapi.client;
 
 import org.bukkit.entity.Player;
-public class HWIDManager {
+public class ClientID {
     public String generateLicenseKey(Player player)
     {
 
