@@ -10,3 +10,6 @@ commands:
   status:
     description: Check the Status of your connection to our servers.
     usage: /<command>
+  balance:
+    description: Check your balance of ur ARX Coins
+    usage: /<command>

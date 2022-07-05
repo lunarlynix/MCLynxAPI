@@ -3,12 +3,13 @@ version: '1.0-SNAPSHOT'
 main: ca.lynix.lynxapi.LynxAPI
 api-version: 1.15
 website: lynix.ca
-libraries:
-  - com.github.dblock:oshi-core:3.4.0
 commands:
-  hwid:
-    description: Request your HWID from our servers.
+  clientid:
+    description: Request your ClientID from our servers.
     usage: /<command>
   status:
     description: Check the Status of your connection to our servers.
+    usage: /<command>
+  balance:
+    description: Check your balance of ur ARX Coins
     usage: /<command>

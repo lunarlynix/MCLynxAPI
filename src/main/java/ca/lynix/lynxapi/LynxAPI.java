@@ -1,5 +1,6 @@
 package ca.lynix.lynxapi;
 
+import ca.lynix.lynxapi.commands.Balance;
 import ca.lynix.lynxapi.commands.MyClientID;
 import ca.lynix.lynxapi.commands.Status;
 import ca.lynix.lynxapi.events.alerts.SendAlert;
@@ -18,6 +19,7 @@ public final class LynxAPI extends JavaPlugin implements Listener {
         System.out.println("LynxAPI Enabled Succesfully!");
         this.getCommand("clientid").setExecutor((CommandExecutor)new MyClientID());
         this.getCommand("status").setExecutor((CommandExecutor)new Status());
+        this.getCommand("balance").setExecutor((CommandExecutor)new Balance());
 
         getServer().getPluginManager().registerEvents(this, this);
     }
